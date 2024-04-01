@@ -45,7 +45,7 @@ class AdminController extends Controller
 
         $post->price = $request->price;
 
-        
+
 
 
         $post->post_status = 'active';
@@ -75,10 +75,6 @@ class AdminController extends Controller
         } else {
             return redirect()->back()->with('error', 'Choose the image');
         }
-
-        $post->save();
-
-        return redirect()->back();
     }
 
     public function show_post()
@@ -102,9 +98,6 @@ class AdminController extends Controller
         $post = House::find($id);
 
         return view('admin.edit_post', compact('post'));
-
-
-        return redirect()->back()->with('message', 'Post Updated Successfully');
     }
 
     public function update_post(Request $request, $id)
@@ -132,7 +125,6 @@ class AdminController extends Controller
         $post->save();
 
         return redirect()->back()->with('message', 'Post Updated Successfully');
-
     }
 
     public function logout(Request $request): RedirectResponse

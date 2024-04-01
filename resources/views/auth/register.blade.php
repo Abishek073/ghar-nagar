@@ -2,6 +2,8 @@
     <form method="POST" action="{{ route('register') }}">
         @csrf
 
+        
+
         <!-- Name -->
         <div>
             <x-input-label for="name" :value="__('Name')" />
@@ -20,6 +22,13 @@
             <x-input-label for="number" :value="__('Phone Number')" />
             <x-text-input id="number" class="block mt-1 w-full" type="number" name="number" :value="old('number')"   />
             <x-input-error :messages="$errors->get('number')" class="mt-2" />
+        </div>
+
+        <!-- Address -->
+        <div class="mt-4">
+            <x-input-label for="address" :value="__('Address')" />
+            <x-text-input id="address" class="block mt-1 w-full" type="text" name="address" :value="old('address')"   />
+            <x-input-error :messages="$errors->get('address')" class="mt-2" />
         </div>
 
         <!-- Password -->

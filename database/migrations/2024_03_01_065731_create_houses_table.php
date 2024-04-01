@@ -14,7 +14,9 @@ return new class extends Migration
         Schema::create('houses', function (Blueprint $table) {
             $table->id();
             $table->string('title')->nullable();
+            $table->string('area')->nullable();
             $table->longText('description')->nullable();
+            $table->longText('price')->nullable();
             $table->string('image')->nullable();
             $table->string('name')->nullable();
             $table->string('user_id')->nullable();

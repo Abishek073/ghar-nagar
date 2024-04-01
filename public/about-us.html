@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/form.css" />
+  <link rel="stylesheet" href="css/search.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    #contact-header {
+      --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    #contact-container {
+      width: 80%;
+      margin: auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    #contact-h1 {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+    p {
+      line-height: 1.6;
+    }
+    .team-member {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 20px;
+      overflow: hidden;
+    }
+    .team-member:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .team-member img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin-right: 20px;
+      float: left;
+    }
+    h2 {
+      color: #0047ab; /* Secondary Color */
+    }
+    p{
+      color:black;
+    }
+    .role{
+      color: rgb(70, 21, 21);
+    }
+  </style>
+</head>
+<body>
+  <!-- header -->
+  <header class="header padding10 coloring ">
+    <div class="container dFlexCenterWithSpaceBetween ">
+      <!-- logo - left side -->
+      <span class="header__logo">
+        <img src="images/GharNagar-logo.png" alt="GG">
+      </span>
+      <!-- right side -->
+      <div class="dFlexCenter">
+        <!-- navigation -->
+        <nav class="header__nav">
+          <ul class="dFlexCenter">
+            <li class="header__active"><a href="index.html">Home</a></li>
+            <li><a class="header-a">Rents</a></li>
+            <li><a class="header-a" href="about-us.html">About Us</a></li>
+            <li><a class="header-a" href="contact-us.html">Contact Us</a></li>
+            <!-- search bar is here -->
+            <div class="search">
+              <input type="text" class="search-box" placeholder="Search...">
+              <button class="search-btn">
+                <i class="ph-magnifying-glass-bold"></i>
+              </button>
+              <button class="close-btn">
+                <i class="ph-x-bold"></i>
+              </button>
+            </div>
+          </ul>
+        </nav>
+        <!-- login buttons -->
+        <div class="dFlexCenter dflexMobileCenter">
+          <a href="login.html" class="header__login">Login</a>
+          <a href="signup.html" class="button__small">Sign Up</a>
+          <div class="hamburger only__mobile">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="contact-container">
+    <section id="story">
+      <h2>Our Story</h2>
+      <p>Introducing 'GharNagar (GN)' - your solution to hassle-free house hunting in Biratnagar. Admins can effortlessly manage properties, while users can easily inquire about their dream homes. Simplifying the search, one click at a time</p>
+    </section>
+    <section id="team">
+      <h2>Our Team</h2>
+      <div class="team-member">
+        <img src="images/abishek.jpg" alt="Team Member 1">
+        <div>
+          <h3>Abishek Ghimire</h3>
+          <p class="role">Backend-developer</p>
+          <p>I do what you cannot see.</p>
+        </div>
+      </div>
+      <div class="team-member">
+        <img src="images/sirish.jpg" alt="Team Member 2">
+        <div>
+          <h3>Sirish Koirala</h3>
+          <p class="role">Frontend-developer</p>
+          <p>I do what you can see.</p>
+        </div>
+      </div>
+      <div class="team-member">
+        <img src="images/himanshi.jpg" alt="Team Member 3">
+        <div>
+          <h3>Himanshu Dahal</h3>
+          <p class="role">Project Manager</p>
+          <p>I handel Project and its flow.</p>
+        </div>
+    </div>
+      <div class="team-member">
+        <img src="team-member4.jpg" alt="Amit Shah">
+        <div>
+          <h3>Anil Shah</h3>
+          <p class="role">Project-supervisor</p>
+          <p>I supervise my students.</p>
+        </div>
+      </div>
+    </section>
+    <section id="mission">
+      <h2>Our Mission</h2>
+      <p>To provide a user-friendly platform for individuals seeking accommodation in the Biratnagar area, offering comprehensive and up-to-date listings of available houses.</p>
+      <p>Implement a secure user registration and login system to ensure privacy and enable users to manage their listings and preferences.</p>
+    </section>
+  </div>
+
+</body>
+</html>

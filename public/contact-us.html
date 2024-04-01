@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/form.css" />
+  <link rel="stylesheet" href="css/search.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    #contact-container {
+        --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+      color: #fff;
+      padding: 20px;
+    }
+    #contact-h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+    #contact-form {
+      width: 50%;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    #contact-form input[type="text"],
+    #contact-form input[type="number"],
+    #contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    #contact-form input[type="submit"] {
+      background-color: #0047ab;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #contact-form input[type="submit"]:hover {
+      background-color: #00347f;
+    }
+  </style>
+</head>
+<body>
+  <!-- header -->
+  <header class="header padding10 coloring ">
+    <div class="container dFlexCenterWithSpaceBetween ">
+      <!-- logo - left side -->
+      <span class="header__logo">
+        <img src="images/GharNagar-logo.png" alt="GG">
+      </span>
+      <!-- right side -->
+      <div class="dFlexCenter">
+        <!-- navigation -->
+        <nav class="header__nav">
+          <ul class="dFlexCenter">
+            <li class="header__active"><a href="index.html">Home</a></li>
+            <li><a class="header-a">Rents</a></li>
+            <li><a class="header-a" href="about-us.html">About Us</a></li>
+            <li><a class="header-a" href="contact-us.html">Contact Us</a></li>
+            <!-- search bar is here -->
+            <div class="search">
+              <input type="text" class="search-box" placeholder="Search...">
+              <button class="search-btn">
+                <i class="ph-magnifying-glass-bold"></i>
+              </button>
+              <button class="close-btn">
+                <i class="ph-x-bold"></i>
+              </button>
+            </div>
+          </ul>
+        </nav>
+        <!-- login buttons -->
+        <div class="dFlexCenter dflexMobileCenter">
+          <a href="login.html" class="header__login">Login</a>
+          <a href="signup.html" class="button__small">Sign Up</a>
+          <div class="hamburger only__mobile">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+    <form id="contact-form">
+      <input type="text" name="address" placeholder="Home Address">
+      <input type="number" name="price" placeholder="Price">
+      <select name="house-type">
+        <option value="">Select House Type</option>
+        <option value="2BHK">2BHK</option>
+        <option value="3BHK">3BHK</option>
+        <option value="villa">Villa</option>
+      </select>
+      <input type="file" name="house-pictures" accept="image/*" multiple>
+      <textarea name="message" placeholder="Additional Information"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

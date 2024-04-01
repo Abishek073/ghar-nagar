@@ -4,10 +4,6 @@
 
 }
 
-body {
-  color: #165fa9;
-}
-
 .container {
   width: 1180px;
   margin: 0 auto;
@@ -104,8 +100,8 @@ body {
 
 .buttons {
   border-radius: 40px;
-  background: rgb(3, 1, 119);
-  background: linear-gradient(90deg, rgba(3, 1, 119, 1) 0%, rgba(0, 71, 171, 1) 0%, rgba(0, 22, 53, 1) 100%, rgba(0, 44, 107, 1) 100%, rgba(0, 0, 0, 1) 100%);
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
   display: inline-flex;
   padding: 20px 30px;
   justify-content: center;
@@ -151,8 +147,10 @@ body {
   box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.1);
 }
 
-.button:hover {
-  background: #52bdaa;
+.buttons:hover {
+  background-color: black;
+    border: none;
+    color: white;
 }
 
 .title {

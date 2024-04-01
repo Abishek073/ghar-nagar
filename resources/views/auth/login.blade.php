@@ -34,11 +34,7 @@
        
 
         <div class="flex items-center justify-end mt-4">
-        <div class=""> 
-        <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500  justify-content: space-between  margin: 5px 0 15px"  href="{{ route('register') }}">
-                {{ __('New to Gharnagar?') }}
-            </a>
-       </div>
+      
        
             @if (Route::has('password.request'))
                 <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
@@ -50,5 +46,6 @@
                 {{ __('Log in') }}
             </x-primary-button>
         </div>
+       
     </form>
 </x-guest-layout>

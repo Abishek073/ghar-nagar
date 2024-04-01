@@ -3,19 +3,22 @@
 
 <head>
 
-@include('home.homecss')
+  <link rel="icon" href="images/GharNagar-logo.png" type="image/x-icon">
+
+  @include('home.homecss')
 
   <script src="https://unpkg.com/phosphor-icons"></script>
   <script src="js/search.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
   <section class="landingPage">
     <!-- header -->
-@include('home.header')
+    @include('home.header')
     <!-- section 1 intro -->
     <!--landing page-->
-    <section class="intro padding50 position-relative ">
+    <section class="intro padding50 position-relative " id="home">
       <div class="container dFlex">
         <!-- left -->
         <div class="width50">
@@ -27,9 +30,9 @@
           <img class="intro__border" src="images/line-2.png" />
           <!-- buttons -->
           <div class="intro__butons dFlexCenter dflexMobileFullCenter">
-            <a class="buttons">Buy/Sell House</a>
+            <a class="buttons" href="#house">Buy House</a>
             <a class="intro__play dFlexCenter dflexMobileCenter">
-              <a class="buttons">Buy/Sell Flat</a>
+              <a class="buttons" href="{{url('sellform')}}">Sell House</a>
             </a>
           </div>
         </div>
@@ -43,183 +46,148 @@
   </section>
 
   <!-- section 2 support -->
-  <section class="support padding50">
-    <div class="container dFlex">
-      <!-- left -->
-      <div class="width55">
-        <h2 class="support__title title">
-          How we SUPPORT our<br />
-          customers all over Nepal
-        </h2>
-        <p class="support__p">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem.<br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          <br />
-          Lorem ipsum dolor sit amet consectetur.
-        </p>
-        <!-- support rating -->
-        <div class="support__rating dFlexCenter dflexMobileFullCenter">
-          <!-- left rating -->
-          <div class="support__ratingItem">
-            <img src="images/fivestars.svg" />
-            <span>4.9 / 5 rating</span>
-            <p><b>Buyers</b></p>
-          </div>
-          <!-- right rating -->
-          <div>
-            <img src="images/4stars.svg" />
-            <span>4.8 / 5 rating</span>
-            <p><b>Sellers</b></p>
-          </div>
-        </div>
-      </div>
-      <!-- right -->
-      <div class="support__features width45">
-        <!-- support item -->
-        <div class="support__feature dFlex">
-          <!-- left -->
-          <div class="support__icon">
-            <img src="images/publishing.svg" />
-          </div>
-          <!-- right -->
-          <div>
-            <h4 class="support__h4">Publishing Houses</h4>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, nobis natus nemo harum aspernatur
-              deserunt.
-            </p>
-          </div>
-        </div>
-        <!-- support item -->
-        <div class="support__feature dFlex">
-          <!-- left -->
-          <div class="support__icon">
-            <img src="images/analytics.svg" />
-          </div>
-          <!-- right -->
-          <div>
-            <h4 class="support__h4">Analysing Needs</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, expedita!</p>
-          </div>
-        </div>
-        <!-- support item -->
-        <div class="support__feature dFlex">
-          <!-- left -->
-          <div class="support__icon">
-            <img src="images/engagement.svg" />
-          </div>
-          <!-- right -->
-          <div>
-            <h4 class="support__h4">Active Engagement </h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, autem?</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  @include('home.features')
 
   <!-- section 3 features -->
-  <section class="features padding80 position-relative">
-    <div class="container">
-      <!-- top info -->
-      <div class="features__top dFlexCenter">
-        <h2 class="title">
-          Our Features<br />
-        
-        </h2>
-        <p>
-          We offer a variety of interesting houses that you can<br />
-          Select and confirm based on your needs and <br />
-          your personal requiremnts.
-        </p>
-        <a class="buttons">Get Started</a>
-      </div>
-      <!-- bottom info -->
-      <div class="features__bottom dFlexCenter dflexMobileCenter">
-        <!-- left -->
-        <div class="width30">
-          <img src="images/feature2.png" />
-          <h5 class="features__bottomh5">Buy House</h5>
-          <p>Here customers can buy House of their needs</p>
-        </div>
-        <!-- mid -->
-        <div class="width30">
-          <img src="images/feature1.png" />
-          <h5 class="features__bottomh5">Sell House</h5>
-          <p>
-            Here house owners can place their house on sell.
-          </p>
-        </div>
-        <!-- right -->
-        <div class="width30">
-          <img src="images/feature3.png" />
-          <h5 class="features__bottomh5">Rent House</h5>
-          <p>
-            Here we can find a deal in between house customers and owners.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
   <!-- section 4 benefit -->
-  <section class="benefit padding50">
-    <div class="container dFlex">
-      <!-- left -->
-      <div class="width50">
-        <h2 class="benefit__title title">
-          What Benifit Will<br />
-          You Get
-        </h2>
-        <!-- benefit list -->
-        <ul>
-          <li class="benefit__li dFlexCenter">
-            <img src="images/checked.svg" />
-            <span>Real Estate Marketing</span>
-          </li>
-          <li class="benefit__li dFlexCenter">
-            <img src="images/checked.svg" />
-            <span>Central Renting System</span>
-          </li>
-          <li class="benefit__li dFlexCenter">
-            <img src="images/checked.svg" />
-            <span>Organized Property Listing</span>
-          </li>
-          <li class="benefit__li dFlexCenter">
-            <img src="images/checked.svg" />
-            <span>Customer Search Filter</span>
-          </li>
-          <li class="benefit__li dFlexCenter">
-            <img src="images/checked.svg" />
-            <span>Online Transection</span>
-          </li>
-        </ul>
-      </div>
-      <!-- right -->
-      <div class="width50">
-        <img src="images/benefits2.png" />
-      </div>
-    </div>
-  </section>
+
 
   <!-- section 5 tabs -->
-  <section class="tabs padding80 position-relative">
-    <div class="container">
-      <h2 class="tabs__title title text-center">
-        Choose Plan<br />
-        That’s Right For You
-      </h2>
-      <p class="text-center">
-        Choose plan that works best for you, feel free to contact us
-      </p>
+  @include('home.catalogue')
+
+
+  <!-- Comment and reply system starts here -->
+
+  <div style="text-align: center; padding-bottom:30px;">
+
+    <h1 style="font-size: 30px; text-align:center; padding-top:20px; padding-bottom:20px; "><strong>Comments</strong></h1>
+
+    <form action="{{url('add_comment')}}" method="POST">
+      @csrf
+
+      <textarea style="height: 150px; width:600px;" placeholder="Comment something here" name="comment"></textarea>
+
+      <br>
+
+     <input type="submit" class="btn btn-primary" value="Comment">
+
+    </form>
+
+
+  </div>
+
+  <div style="padding-left: 20%;">
+
+    <h1 style="font-size: 20px; padding-bottom: 20px;">All Comments</h1>
+
+
+    @foreach($comment as $comment)
+
+    <div>
+
+      <b>{{$comment->name}}</b>
+      <p>{{$comment->comment}}</p>
+
+      <a style="color:#2699e6;" href="javascript::void(0);" onclick="reply(this)" data-commentid="{{$comment->id}}">Reply</a>
+
+      @foreach($reply as $rep)
+
+      @if($rep->comment_id==$comment->id)
+
+      <div style="padding-left: 3%; padding-bottom:10px; ">
+
+      <b>{{$rep->name}}</b>
+      <p>{{$rep->reply}}</p>
+      <a style="color:#2699e6;" href="javascript::void(0);" onclick="reply(this)" data-commentid="{{$comment->id}}">Reply</a>
+
+
+
+      </div>
+      @endif
+
+      @endforeach
 
     </div>
-  </section>
+    <br>
+
+    @endforeach
+
+   <!-- Reply Textbox -->
+
+    <div style="display: none;" class="replyDiv">
+
+    <form action="{{url('add_reply')}}" method="POST">
+      @csrf
+
+    <input type="text" id="commentId" name="commentId" hidden="">
+
+      <textarea style="height: 100px; width:500px;" name="reply" placeholder=" Write something here"></textarea>
+
+      <br>
+
+      <button type="submit" class="btn btn-primary ">Reply</button>
+      <a href="javascript::void(0);" class="btn " onclick="reply_close(this)">Close</a>
+
+    </form>
+
+    </div>
+
+  </div>
 
 
 
+
+
+
+
+
+
+  <!-- Comment and reply system ends here -->
+
+  @include('home.sellform')
+
+  @include('home.aboutus')
+
+  <footer id="footer-container">
+    <span id="footer-comment">&copy; 2024 GharNagar. All rights reserved.</span>
+  </footer>
+
+  <script>
+
+    function reply(caller)
+    {
+      document.getElementById('commentId').value=$(caller).attr('data-Commentid');
+      $('.replyDiv').insertAfter($(caller));
+      $('.replyDiv').show();
+
+    }
+
+    function reply_close(caller)
+    {
+      $('.replyDiv').hide();
+
+    }
+  </script>
+
+<script>
+        document.addEventListener("DOMContentLoaded", function(event) { 
+            var scrollpos = localStorage.getItem('scrollpos');
+            if (scrollpos) window.scrollTo(0, scrollpos);
+        });
+
+        window.onbeforeunload = function(e) {
+            localStorage.setItem('scrollpos', window.scrollY);
+        };
+    </script>
+
+
+
+  <script src="js/sorting.js"></script>
   <script src="js/main.js" async defer></script>
   <script src="js/form.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8N"></script>
 
 
 </body>

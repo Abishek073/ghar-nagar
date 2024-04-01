@@ -13,12 +13,12 @@
             color: white;
         }
 
-        .div_center{
+        .div_center {
             text-align: center;
             padding: 30px;
         }
 
-        label{
+        label {
             display: inline-block;
             width: 200px;
         }
@@ -38,6 +38,32 @@
 
         <div class="page-content">
 
+            @if(session()->has('success'))
+
+            <div class="alert alert-success">
+
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
+
+                {{session()->get('success')}}
+
+            </div>
+
+
+            @endif
+
+            @if(session()->has('error'))
+
+            <div class="alert alert-danger">
+
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
+
+                {{session()->get('error')}}
+
+            </div>
+
+
+            @endif
+
             <h1 class="house_title">Add House</h1>
 
             <div>
@@ -47,9 +73,17 @@
 
                     <div class="div_center">
 
-                        <label for="">House Title</label>
-                        <input type="text" name="title">
+                        <label for="">House For</label>
+<select name="title" style="Width:150px">
+    <option value="rent"> Rent</option>
+    <option value="Sell"> Sell</option>
+</select>
+                    </div>
 
+                    <div class="div_center">
+
+                        <label for="">Address</label>
+                        <input type="text" name="area">
                     </div>
 
                     <div class="div_center">
@@ -60,8 +94,14 @@
 
                     <div class="div_center">
 
+                        <label for="">Price </label>
+                        <input type="text" name="price" placeholder="In Rupees">
+                    </div>
+
+                    <div class="div_center">
+
                         <label for="">Add Image</label>
-                        <input type="file" name="image">
+                        <input type="file" name="image" multiple>
 
                     </div>
 

@@ -1,0 +1,19 @@
+#footer-container {
+    --tw-bg-opacity: 1;
+    background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+    color: #fff; /* Set text color */
+    padding: 20px; /* Add some padding */
+    text-align: center; /* Align content to center */
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+.footer-a{
+    text-decoration: none;
+    color: white;
+}
+#footer-comment{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 14px;
+}
+  

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/contact-us.css">
+    <link rel="stylesheet" href="css/about-us.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/catelog.css">
+
+    <style>
+
+.contactbox {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="number"],
+#contact-form input[type="email"],
+#contact-form select,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#contact-form select {
+    height: 40px;
+}
+
+#contact-form input[type="file"] {
+    margin-bottom: 10px;
+}
+
+#contact-form textarea {
+    height: 100px;
+}
+
+#contact-form input[type="submit"] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: black;
+}
+
+#contact-form input[type="submit"]:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #999;
+}
+
+
+.white-theme {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+.contact-container {
+    max-width:956px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact-h1 {
+    text-align: center;
+}
+.contact-info {
+    margin-top: 30px;
+    text-align: center;
+}
+.contact-info p {
+    margin: 10px 0;
+}
+.contact-info p span {
+    font-weight: bold;
+}
+.emailme{
+    color: black;
+}
+
+.emailme:hover{
+    color: black;
+}
+    </style>
+
+</head>
+<body>
+     <section id="contact-us" class="benefit padding50">
+    <div class="container dFlex">
+      <!-- left -->
+      <div class="width50">
+        <h2 class="benefit__title title">
+          Want to buy this house?<br />
+        </h2>
+
+        <!-- form is here -->
+        <div class="contactbox">
+          <form id="contact-form">
+            <input type="text" name="fullname" placeholder="Full Name" required>
+
+            <input type="text" name="address" placeholder="Home Address" required>
+
+            <input type="number" name="number" placeholder="Contact number" required>
+
+            <input type="email" name="email" placeholder="Email Address">
+
+            <input type="submit" value="Submit">
+
+          </form>
+        </div>
+      </div>
+      <!-- right -->
+      <div class="width50">
+        <img src="images/benefits2.png" />
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,32 +1,24 @@
 <nav id="sidebar">
         <!-- Sidebar Header-->
         <div class="sidebar-header d-flex align-items-center">
-          <div class="avatar"><img src="adminfile/img/avatar-6.jpg" alt="..." class="img-fluid rounded-circle"></div>
+          
           <div class="title">
+
+
+           <strong  class="text-primary">HELLO !</strong>
           <div class="brand-text brand-big visible text-uppercase"><strong class="text-primary">{{ Auth::user()->name }}</strong></div>
 
           
            <!-- <p>Web Designer</p> -->
           </div>
         </div>
-        <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
+        <!-- Sidebar Navidation Menus-->
         <ul class="list-unstyled">
-                <li class="active"><a href="index.html"> <i class="icon-home"></i>Home </a></li>
-                <li><a href="{{url('post_page')}}"> <i class="icon-grid"></i>Add House </a></li>
-                <li><a href="charts.html"> <i class="fa fa-bar-chart"></i>Charts </a></li>
-                <li><a href="forms.html"> <i class="icon-padnote"></i>Forms </a></li>
-                <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-windows"></i>Example dropdown </a>
-                  <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
-                    <li><a href="#">Page</a></li>
-                    <li><a href="#">Page</a></li>
-                    <li><a href="#">Page</a></li>
-                  </ul>
-                </li>
-                <li><a href="login.html"> <i class="icon-logout"></i>Login page </a></li>
-        </ul><span class="heading">Extras</span>
-        <ul class="list-unstyled">
-          <li> <a href="#"> <i class="icon-settings"></i>Demo </a></li>
-          <li> <a href="#"> <i class="icon-writing-whiteboard"></i>Demo </a></li>
-          <li> <a href="#"> <i class="icon-chart"></i>Demo </a></li>
+                <li><a href="{{url('welcomepage')}}"> <div class="text-white">Dashboard </div></a></li>
+                <li><a href="{{url('post_page')}}"> <div class="text-white">Add House </div></a></li>
+                <li><a href="{{url('show_post')}}"> <div class="text-white">Show House </div> </a></li>
+                <!-- <li><a href=""> <div class="text-white">Approve Post </div></a></li> -->
+                  
+                
         </ul>
       </nav>
